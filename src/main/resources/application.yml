@@ -1,0 +1,9 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: business-search
+  elasticsearch:
+    uris: ${SPRING_ELASTICSEARCH_URIS:http://localhost:9200}
+  jackson:
+    default-property-inclusion: non_null
